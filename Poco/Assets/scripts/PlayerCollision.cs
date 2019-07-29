@@ -12,7 +12,7 @@ public class PlayerCollision : MonoBehaviour {
         if (collisionInfo.collider.tag == "obstacle" )
         {
             
-            FindObjectOfType<GameManager>().EndGame();
+            //FindObjectOfType<GameManager>().EndGame();
         }
     }
     void FixedUpdate()
@@ -23,7 +23,7 @@ public class PlayerCollision : MonoBehaviour {
         }
         else if(this.transform.position.z > levelLength)
         {
-            FindObjectOfType<GameManager>().EndGame();
+            //FindObjectOfType<GameManager>().EndGame();
             //print level completed. call another function.
         }
     }
